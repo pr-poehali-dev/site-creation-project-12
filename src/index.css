@@ -24,7 +24,7 @@
     --muted: 245 242 238;
     --muted-foreground: 120 113 106;
 
-    --accent: 184 134 11;
+    --accent: 139 105 20;
     --accent-foreground: 251 249 247;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,13 +32,13 @@
 
     --border: 230 225 220;
     --input: 230 225 220;
-    --ring: 184 134 11;
+    --ring: 139 105 20;
 
     --radius: 0.5rem;
 
     --leather-brown: 60 51 32;
     --warm-gray: 142 135 128;
-    --gold-accent: 184 134 11;
+    --gold-accent: 139 105 20;
     --cream: 251 249 247;
   }
 
@@ -61,12 +61,12 @@
     --muted: 84 75 58;
     --muted-foreground: 190 185 180;
 
-    --accent: 184 134 11;
+    --accent: 139 105 20;
     --accent-foreground: 60 51 32;
 
     --border: 84 75 58;
     --input: 84 75 58;
-    --ring: 184 134 11;
+    --ring: 139 105 20;
   }
 }
 
@@ -123,18 +123,63 @@
     background-image:
       radial-gradient(
         circle at 20% 50%,
-        rgba(120, 113, 106, 0.1) 0%,
-        transparent 50%
+        rgba(120, 113, 106, 0.15) 0%,
+        transparent 60%
       ),
       radial-gradient(
         circle at 80% 20%,
-        rgba(184, 134, 11, 0.05) 0%,
+        rgba(139, 105, 20, 0.08) 0%,
         transparent 50%
       ),
       radial-gradient(
         circle at 40% 80%,
-        rgba(60, 51, 32, 0.05) 0%,
+        rgba(60, 51, 32, 0.08) 0%,
         transparent 50%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(139, 105, 20, 0.03) 0%,
+        transparent 50%,
+        rgba(60, 51, 32, 0.03) 100%
       );
+    background-size:
+      300px 300px,
+      200px 200px,
+      250px 250px,
+      100% 100%;
+    background-position:
+      0 0,
+      100% 0,
+      50% 100%,
+      0 0;
+  }
+
+  .premium-texture {
+    background-image:
+      conic-gradient(
+        from 45deg,
+        rgba(139, 105, 20, 0.05) 0deg,
+        transparent 90deg,
+        rgba(60, 51, 32, 0.03) 180deg,
+        transparent 270deg
+      ),
+      radial-gradient(
+        ellipse at 30% 70%,
+        rgba(251, 249, 247, 0.8) 0%,
+        transparent 70%
+      );
+    background-size:
+      400px 400px,
+      600px 600px;
+  }
+
+  .subtle-pattern {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 8px,
+      rgba(139, 105, 20, 0.02) 8px,
+      rgba(139, 105, 20, 0.02) 16px
+    );
   }
 }

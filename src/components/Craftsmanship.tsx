@@ -27,7 +27,7 @@ const Craftsmanship = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted leather-texture">
+    <section className="py-20 bg-gradient-to-br from-muted to-background leather-texture">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Текстовая часть */}
@@ -73,7 +73,8 @@ const Craftsmanship = () => {
               alt="Мастерская по изготовлению кожаных изделий"
               className="rounded-lg shadow-2xl"
             />
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold-accent/20 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold-accent/15 rounded-full blur-3xl"></div>
+            <div className="absolute -top-4 -left-4 w-20 h-20 bg-leather-brown/10 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>

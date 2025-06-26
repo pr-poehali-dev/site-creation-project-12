@@ -2,8 +2,9 @@ import Icon from "@/components/ui/icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-leather-brown text-cream py-16">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gradient-to-br from-leather-brown via-leather-brown to-leather-brown/90 text-cream py-16 leather-texture">
+      <div className="absolute inset-0 bg-gradient-to-t from-leather-brown/50 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Логотип и описание */}
           <div className="md:col-span-2">

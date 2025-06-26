@@ -2,9 +2,16 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-cream to-muted leather-texture">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-cream via-background to-muted leather-texture premium-texture">
+      {/* Декоративные фоновые элементы */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gold-accent/5 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-32 right-16 w-48 h-48 bg-leather-brown/3 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gold-accent/8 rounded-full blur-xl"></div>
+      </div>
+
       {/* Фоновое изображение */}
-      <div className="absolute inset-0 bg-black/10">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background/30">
         <img
           src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80"
           alt="Luxury leather bag"
